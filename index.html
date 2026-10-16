@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#c8634a">
+<title>Grok Ruffsources HQ</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css?v=rs5">
+<script type="importmap">
+{ "imports": { "three": "./lib/three.module.min.js", "three/addons/": "./lib/addons/" } }
+</script>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud" class="hidden">
+  <div id="hTL"><div id="hArea" class="chip">🦴 Bone Fountain Plaza</div><div id="hGoal"></div></div>
+  <div id="hTR"><div class="chip">🦴 <b id="hBones">0/0</b></div><div class="chip">💤 <b id="hNaps">0/6</b></div></div>
+  <button id="hPause" aria-label="journal">📒</button>
+</div>
+<div id="touch" class="hidden">
+  <div id="touchZone"></div><div id="stickRing"></div><div id="stickKnob"></div>
+  <button class="tb" id="tJump" data-b="jump">JUMP</button>
+  <button class="hidden" id="tAct" data-b="act"></button>
+</div>
+<div id="dlg"></div>
+<div id="ui"></div>
+<div id="toast"></div>
+<div id="loading"><div class="lg">GROK<br><span>RUFFSOURCES</span></div><div class="bar"><i id="loadBar"></i></div><p id="loadTxt">Loading…</p></div>
+<script type="module" src="js/main.js?v=rs5"></script>
+</body>
+</html>
